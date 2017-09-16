@@ -12,8 +12,8 @@ Sub delete_colnames()
 Dim colNames_del
 Dim i&, j&
 
-'delete¶àÓàÁÐ
-colNames_del = Array("CI±êÊ¶", "ÏµÍ³½ÚµãCI", "HostName", "DBÊµÀýÃû³Æ", "ÖÐ¼ä¼þÊµÀýÃû³Æ", "ÍøÂçÇøÓò", "Ó¦ÓÃ·ÖÀà", "Ó¦ÓÃ½ÚµãÃû³Æ", "Ó¦ÓÃ·¶Î§", "Ó¦ÓÃ×é", "Ó¦ÓÃ×´Ì¬", "ÔÖ±¸µÈ¼¶", "¸ß¿ÉÓÃ²ÎÊý", "¸ß¿ÉÓÃÄ£Ê½", "¼¯ÈºIPµØÖ·", "±¸·Ý×é¹ØÏµ", "±¸·Ý×é", "×¨Òµ×é", "Ó¦ÓÃÎ¬»¤²¿ÃÅ", "Ó¦ÓÃÎ¬»¤ÈË", "·þÎñ·¶Î§", "·þÎñÇøÓò", "½Úµã·Ö×é±àºÅ", "Ó¦ÓÃ¸ß¿ÉÓÃÄ£Ê½", "×ÊÔ´±àºÅ", "ÐòÁÐºÅ", "ÐÍºÅ", "·þÎñÆ÷CPU¸öÊý", "·þÎñÆ÷CPUºËÊý", "·þÎñÆ÷ÄÚ´æÈÝÁ¿", "·þÎñÆ÷Ó²ÅÌ¹æ¸ñ£¨G£©", "ÎïÀíÎ»ÖÃ", "°²×°»ú·¿", "·ÖÇø±àºÅ", "Éè±¸·ÖÇøCPU¸öÊý", "Éè±¸·ÖÇøCPUºËÊý", "Éè±¸·ÖÇøÄÚ´æÈÝÁ¿", "Éè±¸·ÖÇøÄÚÖÃÓ²ÅÌ¸öÊý", "Éè±¸·ÖÇøRAIDÀàÐÍ", "Éè±¸·ÖÇø´æ´¢ÈÝÁ¿", "´æ´¢Éè±¸×ÊÔ´±àºÅ", "´æ´¢Éè±¸ÐòÁÐºÅ", "HostGroupName", "´æ´¢×ÊÔ´ÈÝÁ¿", "VIPµØÖ·", "VIPÓòÃû", "CI¸ºÔð»ú¹¹", "CI¸ºÔðÈË", "ÏµÍ³½ÚµãCI¸ºÔð»ú¹¹", "´´½¨Ê±¼ä", "×îºóµ÷ÕûÊ±¼ä", "×îºóÐÞ¸ÄÈË", "Î¬»¤À´Ô´", "±¸×¢", "ÅäÖÃÏî×´Ì¬")
+'deleteå¤šä½™åˆ—
+colNames_del = Array("CIæ ‡è¯†", "ç³»ç»ŸèŠ‚ç‚¹CI", "HostName", "DBå®žä¾‹åç§°", "ä¸­é—´ä»¶å®žä¾‹åç§°", "ç½‘ç»œåŒºåŸŸ", "åº”ç”¨åˆ†ç±»", "åº”ç”¨èŠ‚ç‚¹åç§°", "åº”ç”¨èŒƒå›´", "åº”ç”¨ç»„", "åº”ç”¨çŠ¶æ€", "ç¾å¤‡ç­‰çº§", "é«˜å¯ç”¨å‚æ•°", "é«˜å¯ç”¨æ¨¡å¼", "é›†ç¾¤IPåœ°å€", "å¤‡ä»½ç»„å…³ç³»", "å¤‡ä»½ç»„", "ä¸“ä¸šç»„", "åº”ç”¨ç»´æŠ¤éƒ¨é—¨", "åº”ç”¨ç»´æŠ¤äºº", "æœåŠ¡èŒƒå›´", "æœåŠ¡åŒºåŸŸ", "èŠ‚ç‚¹åˆ†ç»„ç¼–å·", "åº”ç”¨é«˜å¯ç”¨æ¨¡å¼", "èµ„æºç¼–å·", "åºåˆ—å·", "åž‹å·", "æœåŠ¡å™¨CPUä¸ªæ•°", "æœåŠ¡å™¨CPUæ ¸æ•°", "æœåŠ¡å™¨å†…å­˜å®¹é‡", "æœåŠ¡å™¨ç¡¬ç›˜è§„æ ¼ï¼ˆGï¼‰", "ç‰©ç†ä½ç½®", "å®‰è£…æœºæˆ¿", "åˆ†åŒºç¼–å·", "è®¾å¤‡åˆ†åŒºCPUä¸ªæ•°", "è®¾å¤‡åˆ†åŒºCPUæ ¸æ•°", "è®¾å¤‡åˆ†åŒºå†…å­˜å®¹é‡", "è®¾å¤‡åˆ†åŒºå†…ç½®ç¡¬ç›˜ä¸ªæ•°", "è®¾å¤‡åˆ†åŒºRAIDç±»åž‹", "è®¾å¤‡åˆ†åŒºå­˜å‚¨å®¹é‡", "å­˜å‚¨è®¾å¤‡èµ„æºç¼–å·", "å­˜å‚¨è®¾å¤‡åºåˆ—å·", "HostGroupName", "å­˜å‚¨èµ„æºå®¹é‡", "VIPåœ°å€", "VIPåŸŸå", "CIè´Ÿè´£æœºæž„", "CIè´Ÿè´£äºº", "ç³»ç»ŸèŠ‚ç‚¹CIè´Ÿè´£æœºæž„", "åˆ›å»ºæ—¶é—´", "æœ€åŽè°ƒæ•´æ—¶é—´", "æœ€åŽä¿®æ”¹äºº", "ç»´æŠ¤æ¥æº", "å¤‡æ³¨", "é…ç½®é¡¹çŠ¶æ€")
 
 For i = 1 To 80
     For j = 0 To UBound(colNames_del)
@@ -23,7 +23,7 @@ For i = 1 To 80
     Next
 Next
 
-'²¹Æë¿Õ°×IP
+'è¡¥é½ç©ºç™½IP
 For i = 2 To 30000
     If Cells(i, 3) = "" Then
     Cells(i, 3) = Cells(i, 4).Value
@@ -34,46 +34,46 @@ Next
 On Error Resume Next
     Application.ScreenUpdating = False
     Dim spcStr, arr, rend&, brr, rng As Range, icount&
-    spcStr = Array("²âÊÔÒ»", "°ì¹«", "Éú²úÑéÖ¤", "Í¶²ú×¼±¸", "Éú²ú´ý»ØÊÕ")
-    rend = Range("A" & Rows.Count).End(xlUp).Row '×îºóÒ»¸ö·Ç¿ÕÐÐµÄÐÐÊý
-    arr = Range("A2:A" & rend) 'AÁÐ¸øarr
+    spcStr = Array("æµ‹è¯•ä¸€", "åŠžå…¬", "ç”Ÿäº§éªŒè¯", "æŠ•äº§å‡†å¤‡", "ç”Ÿäº§å¾…å›žæ”¶")
+    rend = Range("A" & Rows.Count).End(xlUp).Row 'æœ€åŽä¸€ä¸ªéžç©ºè¡Œçš„è¡Œæ•°
+    arr = Range("A2:A" & rend) 'Aåˆ—ç»™arr
     Dim arr1, arr2, arr3, arr4, arr5, arr6, arr7, arr8, arr9 As Range
-    arr1 = Range("J2:J" & rend) 'arr1£¬Ó¦ÓÃ½ÚµãÃèÊö
-    arr2 = Range("M2:M" & rend) 'arr2£¬Æ·ÅÆ
-    arr3 = Range("Q2:Q" & rend) 'arr3£¬ÏµÍ³½ÚµãCI¸ºÔð²¿ÃÅ
-    arr4 = Range("N2:N" & rend) 'arr4£¬²¿ÊðµØ
-    arr5 = Range("H2:H" & rend) 'arr5£¬Ó¦ÓÃÓ¢ÎÄ¼ò³Æ
-    arr6 = Range("K2:K" & rend) 'arry6£¬Ö÷±¸ÀàÐÍ
-    arr7 = Range("L2:L" & rend) 'Ð¡Àà
-    arr8 = Range("O2:O" & rend) '·ÖÇøÀàÐÍ
-    ReDim brr(1 To UBound(arr), 1 To 1)  'brr(1-arr,1)£¬ÓÃÀ´±ê¼Ç¶ÔÓ¦ÐÐÊÇ·ñ°üº¬¹Ø¼ü×Ö
+    arr1 = Range("J2:J" & rend) 'arr1ï¼Œåº”ç”¨èŠ‚ç‚¹æè¿°
+    arr2 = Range("M2:M" & rend) 'arr2ï¼Œå“ç‰Œ
+    arr3 = Range("Q2:Q" & rend) 'arr3ï¼Œç³»ç»ŸèŠ‚ç‚¹CIè´Ÿè´£éƒ¨é—¨
+    arr4 = Range("N2:N" & rend) 'arr4ï¼Œéƒ¨ç½²åœ°
+    arr5 = Range("H2:H" & rend) 'arr5ï¼Œåº”ç”¨è‹±æ–‡ç®€ç§°
+    arr6 = Range("K2:K" & rend) 'arry6ï¼Œä¸»å¤‡ç±»åž‹
+    arr7 = Range("L2:L" & rend) 'å°ç±»
+    arr8 = Range("O2:O" & rend) 'åˆ†åŒºç±»åž‹
+    ReDim brr(1 To UBound(arr), 1 To 1)  'brr(1-arr,1)ï¼Œç”¨æ¥æ ‡è®°å¯¹åº”è¡Œæ˜¯å¦åŒ…å«å…³é”®å­—
     icount = 0
-    For i = 1 To UBound(arr)    'µÚÒ»ÐÐµ½×îºóÒ»ÐÐÑ­»·
-        For j = 0 To UBound(spcStr) 'µÚÒ»¸ö¹Ø¼ü×Öµ½×îºóÒ»¸ö¹Ø¼ü×ÖÑ­»·
-            If InStr(arr(i, 1), spcStr(j)) > 0 Then   'Æ¥Åä¹Ø¼ü×Ö
+    For i = 1 To UBound(arr)    'ç¬¬ä¸€è¡Œåˆ°æœ€åŽä¸€è¡Œå¾ªçŽ¯
+        For j = 0 To UBound(spcStr) 'ç¬¬ä¸€ä¸ªå…³é”®å­—åˆ°æœ€åŽä¸€ä¸ªå…³é”®å­—å¾ªçŽ¯
+            If InStr(arr(i, 1), spcStr(j)) > 0 Then   'åŒ¹é…å…³é”®å­—
                 brr(i, 1) = 1: icount = icount + 1
                 GoTo nt
             End If
         Next
-    If InStr(arr1(i, 1), "¼ÓÃÜ") > 0 Then
+    If InStr(arr1(i, 1), "åŠ å¯†") > 0 Then
         brr(i, 1) = 1: icount = icount + 1
         GoTo nt
     ElseIf InStr(arr2(i, 1), "WDW") > 0 Then
         brr(i, 1) = 1: icount = icount + 1
         GoTo nt
-    ElseIf InStr(arr3(i, 1), "Êý¾ÝÖÐÐÄ£¨ÉÏº££©ÏµÍ³ËÄ²¿") > 0 Then
+    ElseIf InStr(arr3(i, 1), "æ•°æ®ä¸­å¿ƒï¼ˆä¸Šæµ·ï¼‰ç³»ç»Ÿå››éƒ¨") > 0 Then
         brr(i, 1) = 1: icount = icount + 1
         GoTo nt
-    ElseIf InStr(arr3(i, 1), "Êý¾ÝÖÐÐÄ£¨ÉÏº££©ÏµÍ³ËÄ²¿") = 0 And InStr(arr3(i, 1), "Êý¾ÝÖÐÐÄ£¨ÉÏº££©ÏµÍ³Èý²¿") = 0 And (InStr(arr4(i, 1), "Íâ¸ßÇÅ") = 0 And InStr(arr4(i, 1), "¼Î¶¨") = 0) Then     'Íâ¸ßÇÅ·ÇÏµÍ³3£¬4½Úµã
+    ElseIf InStr(arr3(i, 1), "æ•°æ®ä¸­å¿ƒï¼ˆä¸Šæµ·ï¼‰ç³»ç»Ÿå››éƒ¨") = 0 And InStr(arr3(i, 1), "æ•°æ®ä¸­å¿ƒï¼ˆä¸Šæµ·ï¼‰ç³»ç»Ÿä¸‰éƒ¨") = 0 And (InStr(arr4(i, 1), "å¤–é«˜æ¡¥") = 0 And InStr(arr4(i, 1), "å˜‰å®š") = 0) Then     'å¤–é«˜æ¡¥éžç³»ç»Ÿ3ï¼Œ4èŠ‚ç‚¹
         brr(i, 1) = 1: icount = icount + 1
         GoTo nt
     ElseIf InStr(arr5(i, 1), "ECCOPT") > 0 Or InStr(arr5(i, 1), "BF-CDS(DCCB)") > 0 Or (InStr(arr5(i, 1), "CDS") > 0 And InStr(arr5(i, 1), "F-CDSI") = 0) Then
         brr(i, 1) = 1: icount = icount + 1
         GoTo nt
-    ElseIf InStr(arr6(i, 1), "Àä±¸") > 0 Then
+    ElseIf InStr(arr6(i, 1), "å†·å¤‡") > 0 Then
         brr(i, 1) = 1: icount = icount + 1
         GoTo nt
-    ElseIf InStr(arr8(i, 1), "Ò»Ìå»ú") > 0 Or InStr(arr8(i, 1), "TERADATA") > 0 Or (InStr(arr7(i, 1), "¹¤¿Ø»ú") > 0 And InStr(arr8(i, 1), "ÎïÀí»ú") > 0) Then
+    ElseIf InStr(arr8(i, 1), "ä¸€ä½“æœº") > 0 Or InStr(arr8(i, 1), "TERADATA") > 0 Or (InStr(arr7(i, 1), "å·¥æŽ§æœº") > 0 And InStr(arr8(i, 1), "ç‰©ç†æœº") > 0) Then
         brr(i, 1) = 1: icount = icount + 1
         GoTo nt
     End If
@@ -98,19 +98,19 @@ a1:
     arr = Range("A1:W1")
     
     For i = 1 To 30
-    If InStr(arr(1, i), "Êý¾Ý¿â") > 0 Then
+    If InStr(arr(1, i), "æ•°æ®åº“") > 0 Then
     i = i + 1
     Columns(i).Insert
     Cells(1, i).Value = "DB"
     i = i + 1
     GoTo mt
-    ElseIf InStr(arr(1, i), "²Ù×÷ÏµÍ³") > 0 Then
+    ElseIf InStr(arr(1, i), "æ“ä½œç³»ç»Ÿ") > 0 Then
     i = i + 1
     Columns(i).Insert
     Cells(1, i).Value = "OS"
     i = i + 1
     GoTo mt
-    ElseIf InStr(arr(1, i), "ÖÐ¼ä¼þ") > 0 Then
+    ElseIf InStr(arr(1, i), "ä¸­é—´ä»¶") > 0 Then
     i = i + 1
     Columns(i).Insert
     Cells(1, i).Value = "MID"
@@ -122,24 +122,6 @@ mt:
     
     
 End Sub
-
-
-
-
-'µÚ1ÁÐ£ºÓ¦ÓÃ½ÚµãÔËÐÐ»·¾³ÊôÓÚÉú²ú¡¢ÔÖ±¸; Rule_1 = Array("²âÊÔÒ»", "°ì¹«", "Éú²úÑéÖ¤", "Í¶²ú×¼±¸", "Éú²ú´ý»ØÊÕ")
-
-'Ó¦ÓÃ½Úµã±¸·ÝÄ£Ê½²»ÎªÀä±¸;
-
-'Ó¦ÓÃ½ÚµãµÄÓ¦ÓÃ½ÚµãÃèÊö²»ÄÜ°üº¬¡°¼ÓÃÜ»ú¡±»ò¡°¼ÓÃÜ·þÎñ¡±
-'"¼ÓÃÜ"
-'Ó¦ÓÃ²»ÎªCDS£¨¼¯ÖÐÊ½ÎÄµµ»ú£©¡¢ECCOPT£¨ECCÔËÎ¬²Ù×÷ÖÕ¶Ë£©¡¢PEMS£¨»ú·¿»·¾³¼à¿Ø£©-Õâ¸öÓ¦¸ÃÃ»ÓÐ
-'("ECCOPT","BF-CDS(DCCB)","CDS"£©
-'×ÊÔ´¹ÜÀíÏµÍ³ÖÐÓ¦·þÎñÆ÷Éè±¸µÄÐ¡ÀàÎª¡°¹¤¿Ø»ú¡±£¬ÇÒÅäÖÃ¹ÜÀíÖÐÉè±¸·ÖÇøµÄ·ÖÇøÀàÐÍÎª¡°ÎïÀí»ú¡±
-
-'ÅäÖÃ¹ÜÀíÖÐÉè±¸·ÖÇøµÄ·ÖÇøÀàÐÍÎª¡°Ò»Ìå»ú¡±»ò¡°Teradata¡±
-
-'×ÊÔ´¹ÜÀíÏµÍ³ÖÐÓ¦·þÎñÆ÷Éè±¸µÄÆ·ÅÆÎª¡°WDW¡±£¨Íâµ¥Î»£©
-
 
 
 
